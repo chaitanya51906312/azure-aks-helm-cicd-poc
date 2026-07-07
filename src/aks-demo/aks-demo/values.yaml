@@ -1,0 +1,13 @@
+replicaCount: 2
+
+image:
+  repository: pocacrdevops.azurecr.io/aks-demo
+  pullPolicy: Always
+  tag: "v1"
+
+service:
+  type: LoadBalancer
+  port: 80
+
+ingress:
+  enabled: false
