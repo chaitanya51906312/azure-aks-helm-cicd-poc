@@ -4,7 +4,7 @@ var app = builder.Build();
 
 app.MapGet("/", () =>
 {
-    return "AKS Helm Deployment POC V1";
+    return "Return AKS Helm Deployment POC V2";
 });
 
 app.MapGet("/health", () =>
@@ -12,7 +12,7 @@ app.MapGet("/health", () =>
     return Results.Ok(new
     {
         Status = "Healthy",
-        Version = "1.0"
+        Version = "2.0"
     });
 });
 
